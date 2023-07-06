@@ -1,1 +1,68 @@
-<mxfile host="app.diagrams.net" modified="2023-03-09T14:01:26.688Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="_AMkldvW4xASgmVJpTAg" version="20.8.10" type="device"><diagram name="Page-1" id="O2V2upBxUE1zoMTyzIXb">3Zldb5swFIZ/TaTtohVfSchlQ7J1Uqd168U+7gw44M1gZkwS9ut3DAZC3Dap1JakVaXg18c2fs9j44SR7SXbjxxl8WcWYjqyjHA7shcjyzId24EPqZS1Mh1PaiHiJFRBnXBH/mElGkotSIjzXqBgjAqS9cWApSkORE9DnLNNP2zFaH/UDEVYE+4CRHX1OwlFrFRzMusqrjGJYjW0a03rigQ1wWomeYxCttmR7OXI9jhjor5Kth6m0rzGl7rdhwdq2xvjOBXHNPC37i9rufj64+Ifin9eZ+Jv6F24dS9rRAs1YXWzomwcwCEYooqMi5hFLEV02alzzoo0xHIYA0pdzA1jGYgmiL+xEKXKLioEAykWCVW19ZhyoAfnpqScFTzAj0yoYQTxCItH4uw2A4AuZgkWvIR2HFMkyLp/H0gxFLVxnc1woZx+guum5voNEZgjUXAMOiU+R2qY3UwAQZm8DEpKwHBug3WbGFreZagyZQNrsO+sX6fmxm8FFPyJqoR9KQR0g5We17kxx2061pgLvH08IbqBqoGjoC/7q3nTLSHLUFq8s3rMmfFSluuenznp9pGkm8b9mXod1G3N9qssoySAoVkKFWwl54oRD+IqGZykUa5lpvPdPMz88+Pblg/xO3kxfHUfzxzfZks4zK816FZtaMaTlAiCZMsMTiItw9WEAd0JFXKf5XAVyat3Dmyq8tQiEH3/CNnGYbJDlMftKpCFWyTguZGCAg9yw30e+G3jMP2m9ar0j7Uk2I67a/p5LwXr2KXgDLoULC0Li6Ley3F1Ewlby2Ux9N7tnhq+1ps7e5jOscROBiXWOeb08Ul2vvQGB3dqnhq45tv7ejg5FtzpoOBOdHAFnI39otpqSQgTJ6uOY5SG0qGt4CiopRNj2R47Q2/C+kHu3FmeHsvybFCWp5rxd2UucAJjB9VdrAnetBDnZSpinBP9UHeA2j7iL3CQOAGGx+eO7OxIZK1hT7ozDdlvDaUcZ+AhSaPB+dz/nnYCfOrnLc2ljJFUVAOP5/BvXJoOUO21n6MxRHlVTV3ua+74/mizUvd7aKLV517f5p7W3IkW3e8b/u1581tsso3ki49LP0vSS7yuUrebdZlheE7TG+RjestyUj2e7YXPhGAJBFBZMW9/lfUYZbxyyl5Vfzt9XFESybZCLtw5UqUAxsTQZJ5hTiCP8noBySJZjm87ac7q33u99kWJ3A5QntWFFdlKNpso2UUqy3mZ+ExOBjpJSApf9aznodfcp9fR6XXvgdd9OrxQ7F6zVHU7L6vs5X8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-07-06T15:34:53.041Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="o3f4YJjPolGzrMDcGVp-" version="21.5.2" type="github">
+  <diagram name="Page-1" id="O2V2upBxUE1zoMTyzIXb">
+    <mxGraphModel dx="1290" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bx8Z2EDQX-zahYHptqdC-1" target="bx8Z2EDQX-zahYHptqdC-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-1" value="Literature library" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="40" y="10" width="200" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bx8Z2EDQX-zahYHptqdC-3" target="bx8Z2EDQX-zahYHptqdC-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-3" value="Application of search strings" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="240" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bx8Z2EDQX-zahYHptqdC-10" target="bx8Z2EDQX-zahYHptqdC-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-10" value="initial pool of sources&lt;br&gt;(765 total)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
+          <mxGeometry x="300" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-15" value="674 sources" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bx8Z2EDQX-zahYHptqdC-12" target="bx8Z2EDQX-zahYHptqdC-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-12" value="Duplicate removal" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bx8Z2EDQX-zahYHptqdC-14" target="bx8Z2EDQX-zahYHptqdC-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6FxTiKyAWoe5UIXjJ_IL-1" value="113 sources" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bx8Z2EDQX-zahYHptqdC-21">
+          <mxGeometry x="-0.1111" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-14" value="Application of IC/EC and exclusion of Secondary studies" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bx8Z2EDQX-zahYHptqdC-16" target="bx8Z2EDQX-zahYHptqdC-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-16" value="Attribute identification and extraction" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="354" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bx8Z2EDQX-zahYHptqdC-17" target="bx8Z2EDQX-zahYHptqdC-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-17" value="Systematic review and synthesis" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="354" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bx8Z2EDQX-zahYHptqdC-19" target="bx8Z2EDQX-zahYHptqdC-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-19" value="Review reporting" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="354" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bx8Z2EDQX-zahYHptqdC-24" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" parent="1" vertex="1">
+          <mxGeometry x="100" y="344" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
