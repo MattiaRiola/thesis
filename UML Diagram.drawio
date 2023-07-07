@@ -1,0 +1,67 @@
+<mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="none" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="node2" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AudioAnalysis&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ AudioAnalysis(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- fingerprintsDb: Map&amp;lt;Long, Set&amp;lt;ChunkDetail&amp;gt;&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getMatchWithScores(Set&amp;lt;AudioMatch&amp;gt;): Map&amp;lt;String, Integer&amp;gt;&lt;br/&gt;+ getMatchesAtTime(Set&amp;lt;AudioMatch&amp;gt;, double, double): Set&amp;lt;AudioMatch&amp;gt;&lt;br/&gt;+ searchMatch(AudioSignal): Set&amp;lt;AudioMatch&amp;gt;&lt;br/&gt;+ getMatchStat(Set&amp;lt;AudioMatch&amp;gt;): Map&amp;lt;String, Integer&amp;gt;&lt;br/&gt;+ analyse(AudioSignal): Map&amp;lt;Long, Set&amp;lt;ChunkDetail&amp;gt;&amp;gt;&lt;br/&gt;+ getAudiosWithOrderedChunksDetails(List&amp;lt;AudioSignal&amp;gt;): Map&amp;lt;String, List&amp;lt;ChunkDetail&amp;gt;&amp;gt;&lt;br/&gt;+ loadAudioFingerprint(List&amp;lt;AudioSignal&amp;gt;): void&lt;br/&gt;+ getBestMatchAtTime(Set&amp;lt;AudioMatch&amp;gt;, double, double): String?&lt;br/&gt;+ evaluateSpectrogram(short[]): Complex[][]&lt;br/&gt;+ getTimeOfSample(long, AudioFormat): double&lt;br/&gt;- convertReShortsInComplexes(short[], int, int): Complex[]&lt;br/&gt;+ getFrequencyRangeIndex(int): int&lt;br/&gt;+ getTimestampOfChunk(long, AudioFormat): double&lt;br/&gt;+ matchesToString(Set&amp;lt;AudioMatch&amp;gt;): String&lt;br/&gt;+ getBestMatch(Set&amp;lt;AudioMatch&amp;gt;): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-148" y="362" width="616" height="451" as="geometry" />
+    </mxCell>
+    <mxCell id="node1" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AudioMatch&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ AudioMatch(ChunkDetail, Set&amp;lt;ChunkDetail&amp;gt;): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- inputChunk: ChunkDetail&lt;br/&gt;- dbChunks: Set&amp;lt;ChunkDetail&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getDbChunks(): Set&amp;lt;ChunkDetail&amp;gt;&lt;br/&gt;+ getInputChunk(): ChunkDetail&lt;br/&gt;+ toString(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-213" y="165" width="336" height="168" as="geometry" />
+    </mxCell>
+    <mxCell id="node0" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AudioSignal&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ AudioSignal(String, short[], AudioFormat): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- name: String&lt;br/&gt;- samples: short[]&lt;br/&gt;- spectrogram: Complex[][]&lt;br/&gt;- format: AudioFormat&lt;br/&gt;- fingerprint: Map&amp;lt;Long, Set&amp;lt;ChunkDetail&amp;gt;&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ toString(): String&lt;br/&gt;+ getFingerprint(): Map&amp;lt;Long, Set&amp;lt;ChunkDetail&amp;gt;&amp;gt;&lt;br/&gt;+ getSpectrogram(): Complex[][]&lt;br/&gt;+ setSamples(short[]): void&lt;br/&gt;+ getSamples(): short[]&lt;br/&gt;+ getName(): String&lt;br/&gt;+ getFormat(): AudioFormat&lt;br/&gt;+ setFormat(AudioFormat): void&lt;br/&gt;+ getAudioDuration(): double&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="586" y="-120" width="352" height="403" as="geometry" />
+    </mxCell>
+    <mxCell id="node3" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ChunkDetail&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ChunkDetail(double[], double[], double, long, String): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ index: long&lt;br/&gt;+ time: double&lt;br/&gt;+ relatedFrequency: double[]&lt;br/&gt;+ chunkHash: long&lt;br/&gt;+ highScores: double[]&lt;br/&gt;+ name: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ hashCode(): int&lt;br/&gt;+ isInTimeTimeWindow(double, double): boolean&lt;br/&gt;+ equals(Object): boolean&lt;br/&gt;+ getHash(): Long&lt;br/&gt;+ getTime(): double&lt;br/&gt;+ hash(long, long, long, long): long&lt;br/&gt;+ getName(): String&lt;br/&gt;+ toString(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="139" y="-120" width="385" height="403" as="geometry" />
+    </mxCell>
+    <mxCell id="node4" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FileExplorer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ FileExplorer(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ DIR_MANUALLY_PLAYED: String&lt;br/&gt;+ DIR_GAME_RECORDS: String&lt;br/&gt;+ DELETE_AUDIO_ONCE_FINISHED: boolean&lt;br/&gt;+ DIR_GAME_SOUNDS: String&lt;br/&gt;+ DIR_SONG_DB: String&lt;br/&gt;+ DIR_GAME_RECORDS_SAVED: String&lt;br/&gt;+ DIR_SONG_RECORDS: String&lt;br/&gt;+ DIR_SONGS: String&lt;br/&gt;+ DIR_BASE_AUDIO_RES: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ listFilesUsingFilesList(String): List&amp;lt;String&amp;gt;&lt;br/&gt;# getShortsFromByteArray(byte[], boolean): short[]&lt;br/&gt;+ deleteFilesInFolder(String): void&lt;br/&gt;# getShortFromTwoBytes(byte, byte): short&lt;br/&gt;+ readWavFile(String, String): AudioSignal&lt;br/&gt;+ readAllSoundsInFolder(String): List&amp;lt;AudioSignal&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="586" y="349" width="358" height="427" as="geometry" />
+    </mxCell>
+    <mxCell id="edge0" edge="1" value="" parent="1" source="node2" target="node1" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.168;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label2" parent="edge0" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-60" y="337" as="geometry" />
+    </mxCell>
+    <mxCell id="edge1" edge="1" value="" parent="1" source="node2" target="node3" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.759;exitY=0.000;exitDx=0;exitDy=0;entryX=0.750;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="319" y="309" />
+          <mxPoint x="428" y="309" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label8" parent="edge1" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="378" y="286" as="geometry" />
+    </mxCell>
+    <mxCell id="edge2" edge="1" value="" parent="1" source="node1" target="node3" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=1.000;exitY=0.859;exitDx=0;exitDy=0;entryX=0.250;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="235" y="309" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label12" parent="edge2" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="144" y="294" as="geometry" />
+    </mxCell>
+    <mxCell id="label16" parent="edge2" vertex="1" connectable="0" value="*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="231" y="289" as="geometry" />
+    </mxCell>
+    <mxCell id="label17" parent="edge2" vertex="1" connectable="0" value="dbChunks" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="205" y="330" as="geometry" />
+    </mxCell>
+    <mxCell id="edge3" edge="1" value="" parent="1" source="node4" target="node0" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="765" y="308" />
+          <mxPoint x="762" y="308" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label20" parent="edge3" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="712" y="292" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
